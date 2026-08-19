@@ -117,3 +117,13 @@ Example run command from repo root:
                                             │
                                             ▼
                                         Answer
+
+
+
+LANGSMITH_TRACING=true
+LANGSMITH_API_KEY=
+LANGSMITH_PROJECT="RAG_Tracing"
+LANGSMITH_ENDPOINT=https://api.smith.langchain.com
+
+# Groq
+GROQ_API_KEY=
