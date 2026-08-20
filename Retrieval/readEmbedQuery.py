@@ -83,13 +83,13 @@ def read_embed_query(pdf_path=None):
         messages,
         config={"run_name": "groq_generation", "tags": ["retrieval", "generation"]},
     )
-    return response.content
+    return response.content, [doc.page_content for doc in results]
 
 if __name__ == "__main__":
-    response = read_embed_query()
+    answer, retrieval_context = read_embed_query()
     print("-" * 20)
     print("\nHere is your perfect response from AI:")
     print("\n")
-    print(response)
+    print(answer)
     
 

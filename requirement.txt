@@ -11,3 +11,4 @@ pypdf
 sentence-transformers>=3.0.0,<4.0.0
 langgraph
 uuid
+portalocker[win32]
